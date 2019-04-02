@@ -1,7 +1,7 @@
 import React from 'react';
 import Square from './Square';
 import Knight from './Knight';
-import { createRequireFromPath } from 'module';
+import { canMoveKnight, movePiece } from './Game';
 
 function renderSquare(i, [piecePositionX, piecePositionY]) {
   // i = 57; x = 1; y = 7
@@ -14,12 +14,31 @@ function renderSquare(i, [piecePositionX, piecePositionY]) {
   const isPieceHere = x === piecePositionX && y === piecePositionY;
   // render the piece component if the piece is here
   const piece = isPieceHere ? <Knight /> : null;
+  // fill the background with the correct color
+  const fill = isBlack ? '#b5915f' : '#441a03';
 
   return (
-      <Square key={i} black={isBlack}>
+    <div 
+    class="square-wrapper"
+    onClick={() => handleSquareClick(x, y)}
+    style={{
+      display: 'grid',
+      placeContent: 'center',
+      backgroundColor: fill,
+    }}>
+      <Square 
+      key={i} 
+      black={isBlack}>
         {piece}
       </Square>
+    </div>
   );
+}
+
+function handleSquareClick(toX, toY) {
+  if (canMoveKnight(toX, toY)) {
+    movePiece(toX, toY);
+  }
 }
 
 export default function Board({ piecePosition }) {
