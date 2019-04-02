@@ -1,16 +1,18 @@
 import React from 'react';
 
 export default function Square({ black, children }) {
-  const fill = black ? 'black' : 'white';
-  const stroke = black ? 'white' : 'black';
+  const fill = black ? '#b5915f' : '#441a03';
+  const stroke = black ? 'black' : 'white';
 
   return (
-    <div 
+    <div class="square"
       style={{ 
+        display: 'grid',
+        alignContent: 'center',
+        justifyContent: 'center',
         backgroundColor: fill,
         color: stroke,
-        width: '100%',
-        height: '100%', 
+        fontSize: '5vw',
       }}
     >
       {children}

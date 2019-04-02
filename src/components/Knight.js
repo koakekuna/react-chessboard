@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Knight = () => (
-  <span>&#9822;</span>
-);
-
-export default Knight;
+export default function Knight() {
+  return (
+    <span>&#9822;</span>
+  );
+}

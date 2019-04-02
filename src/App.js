@@ -3,7 +3,7 @@ import Board from './components/Board';
 
 class App extends Component {
   render() {
-    return <Board knightPosition={[0,0]}/>;
+    return <Board piecePosition={ [4,3] } />;
   }
 }
 
