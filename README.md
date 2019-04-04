@@ -12,8 +12,18 @@
 1. ~~Set up drag and drop context~~
 2. ~~Define drag types~~
 3. ~~Make knight draggable~~
-4. Make board squares droppable
-5. Add a drag preview image
+4. ~~Make board squares droppable~~
+5. ~~Add overlay for incorrect, possible, and correct moves~~
+6. Fix drag preview image
+
+### Add additional pieces and piece logic
+1. King
+2. Queen
+3. Bishop
+4. Rook
+5. Pawn
+
+### Include two players
 
 ## Pieces
 white chess king	♔	U+2654	&#9812;	&#x2654;

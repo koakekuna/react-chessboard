@@ -10,8 +10,9 @@ const Knight = ({ connectDragSource, isDragging }) => {
       opacity: isDragging ? 0.5 : 1,
       fontSize: '5vw',
       cursor: 'move',
+      color: 'white',
     }}>
-      &#9822;
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg" alt="White Knight"/>
     </div>
   )
 };

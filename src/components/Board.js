@@ -9,14 +9,7 @@ const Board = ({ piecePosition: [pieceX, pieceY] }) => {
     return (
       <div 
       key={i}
-      className="square-wrapper"
-      style={{
-        // display: 'grid',
-        // placeContent: 'center',
-        fontSize: '5vw',
-        // gridTemplateColumns: '1fr',
-        // gridTemplateRows: '1fr',
-      }}>
+      className="square-wrapper">
         <BoardSquare x={x} y={y}>
           <Piece isKnight={x === pieceX && y === pieceY} />
         </BoardSquare>
