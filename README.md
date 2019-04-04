@@ -1,19 +1,19 @@
 # react-chessboard
-Simple chessboard using React
+~~Simple~~<sup>who am I kidding?</sup> Chessboard built with React and Grid
 
 ## Todo
 
 ### Build the Game
-#### Identify components
-#### Create components
-#### Add game state
+1. ~~Identify components~~
+2. ~~Create components~~
+3. ~~Add game state~~
 
 ### Add drag and drop interaction
-#### Set up drag and drop context
-#### Define drag types
-#### Make knight draggable
-#### Make board squares droppable
-#### Add a drag preview image
+1. ~~Set up drag and drop context~~
+2. ~~Define drag types~~
+3. ~~Make knight draggable~~
+4. Make board squares droppable
+5. Add a drag preview image
 
 ## Pieces
 white chess king	♔	U+2654	&#9812;	&#x2654;

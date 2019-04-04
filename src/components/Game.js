@@ -1,19 +1,16 @@
-import React from 'react'
-
 let knightPosition = [1,7];
-let observer = null;
+let observers = [];
 
 function emitChange() {
-  observer(knightPosition);
+  observers.forEach(o => o && o(knightPosition));
 }
 
 export function observe(o) {
-  if (observer) {
-    throw new Error('Multiple observers not implemented.');
-  }
-
-  observer = o;
+  observers.push(o);
   emitChange();
+  return () => {
+    observers = observers.filter(t => t !== o)
+  }
 }
 
 export function movePiece(toX, toY) {

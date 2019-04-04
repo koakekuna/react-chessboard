@@ -1,15 +1,13 @@
 import React from 'react';
 
-export default function Square({ black, children }) {
-  const stroke = black ? 'black' : 'white';
-
+export default function Square({ isBlack, children }) {
+  // fill the background with the correct color
+  const backgroundColor = isBlack ? '#b5915f' : '#441a03';
   return (
-    <div class="square"
-      style={{ 
-        color: stroke,
-        fontSize: '5vw',
-      }}
-    >
+    <div className="square"
+    style={{
+      backgroundColor: backgroundColor,
+    }}>
       {children}
     </div>
   )
