@@ -14,7 +14,8 @@
 3. ~~Make knight draggable~~
 4. ~~Make board squares droppable~~
 5. ~~Add overlay for incorrect, possible, and correct moves~~
-6. Fix drag preview image
+6. ~~Add drag preview image~~
+7. Fix drag preview image
 
 ### Add additional pieces and piece logic
 1. King
