@@ -5,12 +5,13 @@ import { DragSource, DragPreviewImage } from 'react-dnd';
 const Knight = ({ connectDragSource, connectDragPreview, isDragging }) => {
   return (
     <>
-      <DragPreviewImage connect={connectDragPreview} src='https://icon2.kisspng.com/20180811/ilk/kisspng-mr-peanutbutter-desktop-wallpaper-animation-bojac-telegram-sticker-4-from-collection-5b6e73db6ddea9.48252693153396527545.jpg' />
+      <DragPreviewImage connect={connectDragPreview} src='images/knight.jpg' />
       <div
       ref={connectDragSource}
       style={{
         opacity: isDragging ? 0.5 : 1,
-        fontSize: '5vw',
+        width: '5vw',
+        height: 'auto',
         cursor: 'move',
         color: 'white',
       }}>
