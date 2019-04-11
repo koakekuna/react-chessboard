@@ -2,10 +2,10 @@ import React from 'react'
 import { ItemTypes } from './ItemTypes';
 import { DragSource, DragPreviewImage } from 'react-dnd';
 
-const Knight = ({ connectDragSource, connectDragPreview, isDragging }) => {
+const Pawn = ({ connectDragSource, connectDragPreview, isDragging }) => {
   return (
     <>
-      <DragPreviewImage connect={connectDragPreview} src='https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg' />
+      <DragPreviewImage connect={connectDragPreview} src='https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg' />
       <div
       ref={connectDragSource}
       style={{
@@ -15,14 +15,14 @@ const Knight = ({ connectDragSource, connectDragPreview, isDragging }) => {
         cursor: 'move',
         color: 'white',
       }}>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg" alt="White Knight"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="White Pawn"/>
       </div>
     </>
   )
 };
 
 export default DragSource(
-  ItemTypes.KNIGHT,
+  ItemTypes.PAWN,
   {
     beginDrag: () => ({}),
   },
@@ -31,4 +31,4 @@ export default DragSource(
     connectDragPreview: connect.dragPreview(),
     isDragging: monitor.isDragging(),
   }),
-)(Knight);
+)(Pawn);

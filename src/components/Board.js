@@ -11,7 +11,7 @@ const Board = ({ piecePosition: [pieceX, pieceY] }) => {
       key={i}
       className="square-wrapper">
         <BoardSquare x={x} y={y}>
-          <Piece isKnight={x === pieceX && y === pieceY} />
+          <Piece isPiece={x === pieceX && y === pieceY} />
         </BoardSquare>
       </div>
     )
